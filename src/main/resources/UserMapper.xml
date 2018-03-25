@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper nameSpace="com.pibigstar.mapper.UserMapper">
+<!--  
+	<resultMap id="BaseResultMap" type="com.zheng.model.User">
+		<id column="USER_ID" property="userId" jdbcType="INTEGER" />
+		<result column="USER_NAME" property="userName" jdbcType="CHAR" />
+		<result column="USER_PASSWORD" property="userPassword" jdbcType="CHAR" />
+	</resultMap>
+-->
+	<select id="getUserById" resultType="com.pibigstar.bean.User" paramaterType="string">
+		select * from user where id = ?
+	</select>
+</mapper>
